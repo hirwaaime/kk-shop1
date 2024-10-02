@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Products - ElectroShop</title>
+    <link rel="stylesheet" href="C:\Users\USER\Downloads\project\css\style.css">
+</head>
+<body>
+  <style>
+  
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #b4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Products Section */
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Search Bar */
+#searchBar {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 10px;
+    width: 50%;
+    font-size: 1.1rem;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    outline: none;
+}
+
+#searchBar:focus {
+    border-color: #333;
+}
+
+/* Products Grid */
+.products-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #fff;
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Buy Now Button */
+.buy-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.buy-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+  </style>
+    
+    <header>
+        <div class="logo">
+            <h1>ElectroShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <main>
+        <section class="products">
+            <h2>Our Products</h2>
+
+            
+            <input type="text" id="searchBar" placeholder="Search for products..." onkeyup="searchProducts()">
+            
+            
+            <div id="productsGrid" class="products-grid">
+                <div class="product-item">
+                    <img src="images\fshn1.jpg" alt="Smartphone X">
+                    <h4>FASHION</h4>
+                    <p>250,000RWF</p>
+                    <a href="contact.html" class="buy-btn">Buy Now</a>
+                </div>
+                <div class="product-item">
+                    <img src="images\WhatsApp Image 2024-10-01 at 15.52.04_430b6a7c.jpg">
+                    <h4>CAPE</h4>
+                    <p>30,000RWF</p>
+                    <a href="contact.html" class="buy-btn">Buy Now</a>
+                </div>
+                <div class="product-item">
+                    <img src="images\pant4.jpg" alt="Smart TV 55">
+                    <h4>pant</h4>
+                    <p>300,000RWF</p>
+                    <a href="contact.html" class="buy-btn">Buy Now</a>
+                </div>
+                <div class="product-item">
+                    <img src="images\WhatsApp Image 2024-10-01 at 15.52.05_0d52b7ac.jpg" alt="Gaming Laptop">
+                    <h4>JACKETS</h4>
+                    <p>350,000RWF</p>
+                    <a href="contact.html" class="buy-btn">Buy Now</a>
+                </div>
+                <div class="product-item">
+                    <img src="images\WhatsApp Image 2024-10-01 at 15.52.04_b6cbe872.jpg" alt="Wireless Earbuds">
+                    <h4>CAPE</h4>
+                    <p>250,000RWF</p>
+                    <a href="contact.html" class="buy-btn">Buy Now</a>
+                </div>
+                <div class="product-item">
+                    <img src="images\WhatsApp Image 2024-10-01 at 15.52.07_af0cf7b4.jpg" alt="Smartwatch Pro">
+                    <h4>FASHIONIST</h4>
+                    <p>30,000RWF</p>
+                    <a href="contact.html" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+    <footer>
+        <p>&copy; 2024 KKShop.</p>
+    </footer>
